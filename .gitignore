@@ -1,0 +1,16 @@
+# Ignore everything by default
+/*
+
+# Exclude .gitignore itself
+!/.gitignore
+
+# Exclude the folders we need
+!/.github/
+!/scrapper baru/
+
+# Inside "scrapper baru", ignore sensitive accounts data & temporary files
+/scrapper baru/accounts.json
+/scrapper baru/*.tmp
+/scrapper baru/final_data.json.tmp
+__pycache__/
+*.pyc

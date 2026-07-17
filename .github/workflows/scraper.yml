@@ -1,0 +1,42 @@
+name: Run Alfagift Scraper Daily
+
+on:
+  schedule:
+    # Berjalan setiap jam 23:00 UTC (setara jam 06:00 WIB keesokan harinya)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+    # Memungkinkan trigger manual lewat web UI GitHub
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Run Scraper
+      env:
+        ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
+        GAS_URL: ${{ secrets.GAS_URL }}
+      run: |
+        cd "scrapper baru"
+        python scraper_gabungan.py
+
+    - name: Commit and Push results
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add "scrapper baru/final_data.json"
+        # Commit hanya jika ada perubahan file final_data.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update scraped data [skip ci]" && git push)
