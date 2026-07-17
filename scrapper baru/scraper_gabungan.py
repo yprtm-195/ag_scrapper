@@ -62,54 +62,94 @@ def get_master_data():
         print(f"[-] Gagal narik data dari GAS: {e}")
         return None
 
-def get_scraped_store_codes(file_path='final_data.json'):
-    if not os.path.exists(file_path):
+def get_scraped_store_codes(output_dir='data'):
+    if not os.path.exists(output_dir):
         return set()
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            
-        if data and isinstance(data, list):
-            first_entry = data[0]
-            last_updated = first_entry.get('last_updated')
-            current_date = datetime.now().strftime('%Y-%m-%d')
-            
-            # Jika tanggal data lama berbeda dengan tanggal hari ini, reset!
-            if last_updated and last_updated != current_date:
-                print(f"[!] Terdeteksi pergantian hari ({last_updated} -> {current_date}). Mereset file {file_path}...")
-                try:
-                    os.remove(file_path)
-                except Exception as e:
-                    print(f"[-] Gagal menghapus file progress lama: {e}")
-                return set()
-                
-            return {item.get('store_code') for item in data if item.get('store_code')}
-    except Exception as e:
-        print(f"[-] Gagal membaca history progress: {e}. Mulai ulang dari awal.")
-        return set()
-    return set()
-
-def save_store_data(store_data, file_path='final_data.json'):
-    with file_lock:
-        data = []
-        if os.path.exists(file_path):
+        
+    scraped_codes = set()
+    current_date = datetime.now().strftime('%Y-%m-%d')
+    reset_needed = False
+    
+    # Cek tanggal dari file JSON cabang apa saja yang ada di folder data
+    for filename in os.listdir(output_dir):
+        if filename.endswith('.json') and filename != 'store_index.json':
+            filepath = os.path.join(output_dir, filename)
             try:
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                if data and isinstance(data, list):
+                    last_updated = data[0].get('last_updated')
+                    if last_updated and last_updated != current_date:
+                        reset_needed = True
+                        break
+                    for item in data:
+                        if item.get('store_code'):
+                            scraped_codes.add(item.get('store_code'))
+            except Exception:
+                pass
+                
+    if reset_needed:
+        print(f"[!] Terdeteksi pergantian hari. Mereset folder '{output_dir}'...")
+        for filename in os.listdir(output_dir):
+            if filename.endswith('.json'):
+                try:
+                    os.remove(os.path.join(output_dir, filename))
+                except Exception as e:
+                    print(f"[-] Gagal menghapus {filename}: {e}")
+        return set()
+        
+    return scraped_codes
+
+def save_store_data(store_data, output_dir='data'):
+    with file_lock:
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir, exist_ok=True)
+            
+        store_code = store_data.get('store_code')
+        branch_name = store_data.get('branch_name', 'N/A').strip().upper()
+        branch_filename = f"{branch_name.replace(' ', '_')}.json"
+        filepath = os.path.join(output_dir, branch_filename)
+        
+        # 1. Update data cabang JSON
+        data = []
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
                     data = json.load(f)
             except Exception:
                 data = []
-        
-        # Simpan/tambahkan data toko baru
+                
+        # Cek jika toko sudah ada di list cabang (timpa jika ada)
+        data = [item for item in data if item.get('store_code') != store_code]
         data.append(store_data)
         
-        # Tulis secara atomik biar gak corrupt kalau di-interupsi
-        temp_file = file_path + '.tmp'
+        temp_file = filepath + '.tmp'
         try:
             with open(temp_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
-            os.replace(temp_file, file_path)
+            os.replace(temp_file, filepath)
         except Exception as e:
-            print(f"\n[-] Gagal menyimpan data ke {file_path}: {e}")
+            print(f"\n[-] Gagal menyimpan data cabang ke {filepath}: {e}")
+            
+        # 2. Update store_index.json
+        index_filepath = os.path.join(output_dir, 'store_index.json')
+        store_index = {}
+        if os.path.exists(index_filepath):
+            try:
+                with open(index_filepath, 'r', encoding='utf-8') as f:
+                    store_index = json.load(f)
+            except Exception:
+                store_index = {}
+                
+        store_index[store_code] = branch_filename
+        
+        temp_index = index_filepath + '.tmp'
+        try:
+            with open(temp_index, 'w', encoding='utf-8') as f:
+                json.dump(store_index, f, indent=2, ensure_ascii=False)
+            os.replace(temp_index, index_filepath)
+        except Exception as e:
+            print(f"\n[-] Gagal menyimpan index ke {index_filepath}: {e}")
 
 def scrap_single_store(store, token, prod_master):
     current_date = datetime.now().strftime('%Y-%m-%d')
@@ -289,13 +329,13 @@ def main():
         threads.append(t)
         
     try:
-        while not store_queue.empty():
+        while not store_queue.empty() or any(t.is_alive() for t in threads):
             time.sleep(0.5)
-            if not any(t.is_alive() for t in threads):
+            if not any(t.is_alive() for t in threads) and not store_queue.empty():
                 break
                 
         for t in threads:
-            t.join(timeout=1.0)
+            t.join()
             
         if stop_event.is_set():
             print("\n[!] Scraping dihentikan secara paksa oleh user. Data yang selesai telah tersimpan aman.")
