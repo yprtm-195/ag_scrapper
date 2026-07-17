@@ -1,0 +1,625 @@
+[
+  {
+    "store_code": "1YAI",
+    "store_name": "CALACA [CACA]",
+    "fc_code": "1YZ1",
+    "branch_name": "MANADO",
+    "mds_name": "YOHANDI",
+    "latitude": "1.4958083",
+    "longitude": "124.8413010",
+    "tipe_toko": "AC 10P COKE",
+    "last_updated": "2026-07-17",
+    "products": [
+      {
+        "name": "Cimory Susu UHT Cokelat 250 ml",
+        "barcode": "8993200666133",
+        "normal": 7900.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 9
+      },
+      {
+        "name": "Cimory Yogurt Squeeze Original 120 g",
+        "barcode": "8993200666935",
+        "normal": 10500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 6
+      },
+      {
+        "name": "Cimory Yogurt Squeeze Stroberi 120 g",
+        "barcode": "8993200666942",
+        "normal": 10500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 12
+      },
+      {
+        "name": "Cimory Yogurt Squeeze Bluberi 120 g",
+        "barcode": "8993200666959",
+        "normal": 10500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 7
+      },
+      {
+        "name": "Cimory Yogurt Bites Bluberi 120 g",
+        "barcode": "8996001356753",
+        "normal": 8500.0,
+        "promo": 7900.0,
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 7
+      },
+      {
+        "name": "Cimory Yogurt Bites Stroberi 120 g",
+        "barcode": "8993200669400",
+        "normal": 8500.0,
+        "promo": 7900.0,
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 8
+      },
+      {
+        "name": "Cimory Minuman Yogurt Stroberi 240 ml",
+        "barcode": "8993200661305",
+        "normal": 9300.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 4
+      },
+      {
+        "name": "Cimory Minuman Yogurt Bluberi 240 ml",
+        "barcode": "8993200661657",
+        "normal": 9300.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 1
+      },
+      {
+        "name": "Cimory Susu UHT Matcha 250 ml",
+        "barcode": "8993200666201",
+        "normal": 7700.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 9
+      },
+      {
+        "name": "Cimory Yogurt Stik Jeruk 40 g",
+        "barcode": "8993200670291",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 2
+      },
+      {
+        "name": "Cimory Yogurt Squeeze Brown Sugar 120 g",
+        "barcode": "8993200668335",
+        "normal": 10500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 4
+      },
+      {
+        "name": "Cimory Susu UHT Biskuit Marie 250 ml",
+        "barcode": "8993200666928",
+        "normal": 7600.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 15
+      },
+      {
+        "name": "Cimory Susu UHT Cokelat Tiramisu 250 ml",
+        "barcode": "8993200667246",
+        "normal": 8000.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 5
+      },
+      {
+        "name": "Cimory Yogurt Stik Rasa Bluberi 40 g",
+        "barcode": "8993200668922",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 29
+      },
+      {
+        "name": "Cimory Yogurt Stik Rasa Stroberi 40 g",
+        "barcode": "8993200668915",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 22
+      },
+      {
+        "name": "Cimory Minuman Yogurt Mix Fruits 240 ml",
+        "barcode": "8993200661350",
+        "normal": 9100.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 4
+      },
+      {
+        "name": "Cimory Yogurt Squeeze Ketan Mangga 120 g",
+        "barcode": "8993200661343",
+        "normal": 10500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 9
+      },
+      {
+        "name": "Cimory Yogurt Stik Anggur Kyoho 40 g",
+        "barcode": "8993200670307",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 1
+      },
+      {
+        "name": "Cimory Yogurt Bites Stroberi Mangga 120 g",
+        "barcode": "8993200669301",
+        "normal": 8500.0,
+        "promo": 7900.0,
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 6
+      },
+      {
+        "name": "Cimory Yogurt Bites Berry Blend 120 g",
+        "barcode": "8993200669271",
+        "normal": 8500.0,
+        "promo": 7900.0,
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 7
+      },
+      {
+        "name": "Cimory Minuman Yogurt Mixed Berry 240 ml",
+        "barcode": "8993200663057",
+        "normal": 9100.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 1
+      },
+      {
+        "name": "Cimory Susu UHT Milk Tea 250 ml",
+        "barcode": "8993200669776",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 6
+      },
+      {
+        "name": "Cimory Susu UHT Thai Tea 250 ml",
+        "barcode": "8993200669769",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 2
+      },
+      {
+        "name": "Cimory Yogurt Stik Rasa Original 40 g",
+        "barcode": "8993200668908",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 16
+      },
+      {
+        "name": "Cimory Susu UHT Full Cream Kotak 250 ml",
+        "barcode": "8993200666157",
+        "normal": 8000.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 3
+      },
+      {
+        "name": "Cimory Susu UHT Cokelat Hazelnut Kotak 250 ml",
+        "barcode": "8993200666805",
+        "normal": 7900.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 5
+      },
+      {
+        "name": "Cimory Susu UHT Malt Cokelat Kotak 250 ml",
+        "barcode": "8993200666898",
+        "normal": 8000.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 1
+      },
+      {
+        "name": "Cimory Susu UHT Cokelat Cashew Kotak 250 ml",
+        "barcode": "8993200666867",
+        "normal": 7900.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 4
+      },
+      {
+        "name": "Cimory Susu UHT Cokelat Almond Kotak 250 ml",
+        "barcode": "8993200666836",
+        "normal": 7900.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 9
+      },
+      {
+        "name": "Cimory Yogurt Stik Rasa Ketan Mangga 40 g",
+        "barcode": "8993200669363",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 15
+      },
+      {
+        "name": "Cimory Yogurt Stik Rasa Brown Sugar 40 g",
+        "barcode": "8993200669462",
+        "normal": 3200.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 36
+      },
+      {
+        "name": "Cimory Minuman Yogurt Tanpa Gula Tambahan Stroberi 240 ml",
+        "barcode": 899320066499,
+        "normal": 9300.0,
+        "promo": 7500.0,
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 3
+      },
+      {
+        "name": "Cimory Eat Milk Puding Susu Rasa Matcha 80 g",
+        "barcode": "8993200670635",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "PWP",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 19
+      },
+      {
+        "name": "Cimory Susu UHT Tanpa Gula Tambahan Almond 225 ml",
+        "barcode": "8993200670505",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 21
+      },
+      {
+        "name": "Cimory Susu UHT Tanpa Gula Tambahan Matcha 225 ml",
+        "barcode": "8993200670529",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 19
+      },
+      {
+        "name": "Cimory Minuman Yogurt Tanpa Gula Tambahan Blueberry 240 ml",
+        "barcode": "8993200669417",
+        "normal": 9300.0,
+        "promo": 7500.0,
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 5
+      },
+      {
+        "name": "Cimory Eat Milk Puding Susu Rasa Cokelat 80 g",
+        "barcode": "8993200669561",
+        "normal": 8300.0,
+        "promo": 7500.0,
+        "jenis_promo": "PWP",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 16
+      },
+      {
+        "name": "Cimory Susu UHT Tanpa Gula Tambahan Cokelat 225 ml",
+        "barcode": "8993200670499",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 5
+      },
+      {
+        "name": "Cimory Minuman Yogurt Tanpa Gula Tambahan Tropical Fruits 240 ml",
+        "barcode": "8993200664986",
+        "normal": 9300.0,
+        "promo": 7500.0,
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 1
+      },
+      {
+        "name": "Cimory Minuman Yogurt Tanpa Gula Tambahan Stroberi & Mangga 240 ml",
+        "barcode": "8993200665006",
+        "normal": 9300.0,
+        "promo": 7500.0,
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 2
+      },
+      {
+        "name": "Cimory Susu UHT Tanpa Gula Tambahan Marie Biscuit 225 ml",
+        "barcode": "8993200670536",
+        "normal": 7500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 9
+      },
+      {
+        "name": "Cimory Eat Milk Puding Susu Rasa Cokelat Hazelnut 80 g",
+        "barcode": "8993200669592",
+        "normal": 8300.0,
+        "promo": 7500.0,
+        "jenis_promo": "PWP",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 20
+      },
+      {
+        "name": "Cimory Eat Milk Puding Susu Rasa Marie Biskuit 80 g",
+        "barcode": "8993200669622",
+        "normal": 7900.0,
+        "promo": 7500.0,
+        "jenis_promo": "PWP",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 1
+      },
+      {
+        "name": "Cimory Minuman Yogurt Original 240 ml",
+        "barcode": "8993200663064",
+        "normal": 9100.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Cimory Susu UHT Cokelat Kotak 125 ml",
+        "barcode": "8993200666263",
+        "normal": 4300.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Cimory Yogurt Bites Almond & Dates 120 g",
+        "barcode": "8993200669240",
+        "normal": 9000.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Kanzler Bakso Original 48 g",
+        "barcode": "8993200668496",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 9
+      },
+      {
+        "name": "Kanzler Bakso Keju 48 g",
+        "barcode": "8993200668502",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 17
+      },
+      {
+        "name": "Kanzler Bakso Pedas 48 g",
+        "barcode": "8993200668984",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 65
+      },
+      {
+        "name": "Kanzler Singles Bakso Gochujang 55 g",
+        "barcode": "8993200000005",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 41
+      },
+      {
+        "name": "Kanzler Singles Sosis Sapi & Ayam Original 65 g",
+        "barcode": "8993200348312",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 25
+      },
+      {
+        "name": "Kanzler Singles Sosis Sapi & Ayam Keju 65 g",
+        "barcode": "8993200346318",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 29
+      },
+      {
+        "name": "Kanzler Singles Sosis Sapi & Ayam Mini 65 g",
+        "barcode": "8993200347315",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 13
+      },
+      {
+        "name": "Kanzler Singles Sosis Sapi & Ayam Pedas 65 g",
+        "barcode": "8993200345717",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "DISKON (POTONGAN HARGA)",
+        "mulai_promo": "2026-06-15T16:00:00.000Z",
+        "akhir_promo": "31/06/2026",
+        "stock": 37
+      },
+      {
+        "name": "Kanzler Singles Sosis Sapi & Ayam Gochujang 60 g",
+        "barcode": "8993200668243",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 34
+      },
+      {
+        "name": "Kanzler Singles Sosis Sapi & Ayam Tom Yum 60 g",
+        "barcode": "8993200000036",
+        "normal": 9500.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 31
+      },
+      {
+        "name": "Kanzler Naget Ayam Krispi 450 g",
+        "barcode": "8993200664399",
+        "normal": 0.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Kanzler Naget Ayam Original 450 g",
+        "barcode": "8993200664382",
+        "normal": 0.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Kanzler Sosis Original Coktail 250 g",
+        "barcode": "8993200667772",
+        "normal": 0.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Kanzler Stik Naget Ayam Krispi 450 g",
+        "barcode": "8993200668076",
+        "normal": 0.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      },
+      {
+        "name": "Kanzler Naget Ayam Krispi Pedas 450 g",
+        "barcode": "8993200669134",
+        "normal": 0.0,
+        "promo": "",
+        "jenis_promo": "",
+        "mulai_promo": "",
+        "akhir_promo": "",
+        "stock": 0
+      }
+    ]
+  }
+]
